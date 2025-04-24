@@ -127,9 +127,26 @@
 # print(sentence.upper())
 
 
-text = "apple banana cherry"
+# text = "apple banana cherry"
 
-# a. Split the string into a list
-print(text.split())
+# # a. Split the string into a list
+# print(text.split())
 # b. Join the list using a comma and print the result
 # print(",".join(text.split()))
+# a ={'name': 'abc',
+#     'age': 20,
+#     'city': 'xyz'
+#     }
+# b = a.keys()
+# print(b
+# 
+try:
+    x = int(input("Enter a number: "))
+    result = 10 / x
+except ValueError:
+    print("Invalid input. Please enter a number.")
+except ZeroDivisionError:
+    print("You can't divide by zero.")
+finally:
+    print("This block always executes.")
+
