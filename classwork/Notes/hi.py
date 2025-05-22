@@ -1,12 +1,11 @@
-def greeting(name):
-  print("Hello, " + name)
 
+import asyncio
+async def greet():
+    print ("Hello, async world!")
 
+# Calling greet() doesn’t run it; it returns a coroutine object
+# print(greet())  # Output: <coroutine object greet at ...>
 
-person1 = {
-  "name": "John",
-  "age": 36,
-  "country": "Norway"
-}
+# To run it, use asyncio.run()
 
-person = ['apple','orange','banana','kiwi','grapes']
+asyncio.run(greet())  # Output: Hello, async world!
